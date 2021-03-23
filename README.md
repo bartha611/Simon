@@ -1,2 +1,0 @@
-# Simon
-Created with CodeSandbox
