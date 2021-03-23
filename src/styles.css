@@ -1,0 +1,171 @@
+body {
+  font-family: sans-serif;
+  background: beige;
+}
+
+#app {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+#board {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.block {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  filter: brightness(65%);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#green {
+  background: green;
+  top: 0%;
+  right: 50%;
+  border-top-left-radius: 100%;
+  border-style: solid;
+  border-width: 10px 5px 5px 10px;
+}
+
+#red {
+  background: red;
+  top: 0%;
+  left: 50%;
+  border-top-right-radius: 100%;
+  border-style: solid;
+  border-width: 10px 10px 5px 5px;
+}
+
+#yellow {
+  background: yellow;
+  bottom: 0%;
+  right: 50%;
+  border-bottom-left-radius: 100%;
+  border-style: solid;
+  border-width: 5px 5px 10px 10px;
+}
+
+#blue {
+  background: blue;
+  bottom: 0%;
+  left: 50%;
+  border-bottom-right-radius: 100%;
+  border-style: solid;
+  border-width: 5px 10px 10px 5px;
+}
+
+#menu {
+  position: absolute;
+  background: white;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  right: 25%;
+  border-radius: 100%;
+  box-sizing: border-box;
+  border: 10px solid black;
+}
+
+#title {
+  text-align: center;
+  margin: 15px 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.title {
+  display: block;
+}
+
+.menu-info {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.button {
+  border-radius: 100%;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 1px solid black;
+  background: red;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  box-shadow: inset 0px 0px 5px black;
+  text-decoration: none;
+  outline: none;
+}
+
+.title {
+  padding-top: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif'
+}
+
+#strict {
+  background: yellow;
+}
+
+#strict-light {
+  position: absolute;
+  height: 3px;
+  width: 3px;
+  border-radius: 100%;
+  background: transparent;
+  border: 1px solid black;
+  right: 33px;
+}
+
+#switch {
+  position: absolute;
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#switch-button {
+  position: relative;
+  display: inline-block;
+  border: 3px solid black;
+  cursor: pointer;
+  width: 30px;
+  height: 15px;
+}
+
+#menu-count {
+  background: rgb(0, 0, 0, 0.7);
+  text-align: center;
+  padding-top: 5px;
+  border: 3px solid black;
+  border-radius: 10%;
+  color: white;
+  height: 20px;
+}
+
+#on {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+#off {
+  position: absolute;
+  left: 0%;
+  width: 50%;
+  height: 100%;
+  background: black;
+}
