@@ -1,6 +1,6 @@
-import { flashingCount } from "../js/flashingCount";
-import { playAnswer } from "../js/playAnswerkey";
-import { sleep } from "../js/sleep";
+const { flashingCount } = require("../js/flashingCount");
+const { playAnswer } = require("../js/playAnswerkey");
+const { sleep } = require("../js/sleep");
 
 const colors = ["red", "yellow", "green", "blue"];
 
@@ -33,8 +33,8 @@ document.getElementById("strict").addEventListener("click", () => {
 });
 
 // event listerner for the simon blocks
-document.querySelectorAll(".block").forEach(item => {
-  item.addEventListener("click", async event => {
+document.querySelectorAll(".block").forEach((item) => {
+  item.addEventListener("click", async (event) => {
     const block = event.target.id;
     if (Game.turn && Game.on && Game.start) {
       const element = document.getElementById(block);
@@ -66,8 +66,8 @@ document.querySelectorAll(".block").forEach(item => {
   });
 });
 
-document.querySelectorAll(".switch").forEach(item => {
-  item.addEventListener("click", event => {
+document.querySelectorAll(".switch").forEach((item) => {
+  item.addEventListener("click", (event) => {
     const { id } = event.target;
     Game.on = !Game.on;
     document.getElementById("off").style.background =
